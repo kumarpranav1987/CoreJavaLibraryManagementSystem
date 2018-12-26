@@ -36,18 +36,13 @@ public class InMemoryBookStorage implements IBookStorage {
 	}
 
 	@Override
-	public void deleteBook(Book book) {
-
+	public List<Book> searchByTitle(String title) {
+		return null;
 	}
 
 	@Override
-	public void searchByTitle(String title) {
-
-	}
-
-	@Override
-	public void deleteByID(String id) {
-
+	public Book deleteByID(String id) {
+		return null;
 	}
 
 }

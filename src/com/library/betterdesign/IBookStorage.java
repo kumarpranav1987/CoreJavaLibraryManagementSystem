@@ -1,13 +1,13 @@
 package com.library.betterdesign;
 
+import java.util.List;
+
 import com.library.Book;
 
 public interface IBookStorage {
 	Book addBook(Book book);
 
-	void deleteBook(Book book);
+	List<Book> searchByTitle(String title);
 
-	void searchByTitle(String title);
-
-	void deleteByID(String id);
+	Book deleteByID(String id);
 }
