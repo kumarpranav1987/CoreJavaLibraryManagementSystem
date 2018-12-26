@@ -75,6 +75,7 @@ public class LibraryMain {
 					break;
 				}
 			}
+			idToTitle.remove(id);
 		}
 		return bookToBeDeleted;
 	}
