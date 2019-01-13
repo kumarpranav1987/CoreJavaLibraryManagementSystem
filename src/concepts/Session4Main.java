@@ -10,7 +10,7 @@ public class Session4Main {
 		Vehicle v1 = new FourWheeler();
 		//v1.method1();
 		
-		simpleMethod(v1);
+		//simpleMethod(v1);
 		/*v.method2();
 		
 		
@@ -27,6 +27,11 @@ public class Session4Main {
 		four.method2();*/
 		
 		//simpleMethod(two);
+		
+		MyImpl i = new MyImpl();
+		i.interfaceMethod1();
+		i.interfaceMethod2();
+		
 
 	}
 
