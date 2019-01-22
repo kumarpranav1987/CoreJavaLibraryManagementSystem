@@ -18,10 +18,11 @@ public class ExceptionHandling {
 		System.out.println(arr[5]);*/
 				
 		//createFileReader();
-		FileReader reader=null;
-		try {
-			reader = new FileReader(
-					"C:\\Users\\Pranav Kumar\\Desktop\\Courses\\LibraryManagementSystem\\Core_Java_Library_Management_System\\input1.txt");
+		
+		try(FileReader reader = new FileReader(
+				"C:\\Users\\Pranav Kumar\\Desktop\\Courses\\LibraryManagementSystem\\Core_Java_Library_Management_System\\input1.txt");) 
+		{
+			
 		myMethod();
 		
 		
@@ -29,14 +30,7 @@ public class ExceptionHandling {
 		}catch (Exception e) {
 			e.printStackTrace();
 		}finally {
-			
-				try {
-					reader.close();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			
+			System.out.println("");
 		}
 		
 		System.out.println("After Catch");
