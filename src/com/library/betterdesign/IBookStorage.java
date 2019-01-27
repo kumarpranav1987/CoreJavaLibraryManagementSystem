@@ -2,7 +2,7 @@ package com.library.betterdesign;
 
 import java.util.List;
 
-import com.library.Book;
+import com.library.model.Book;
 
 public interface IBookStorage {
 	Book addBook(Book book);
